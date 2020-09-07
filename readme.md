@@ -69,6 +69,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Breakdown-schets(en):**
 
-![Breakdownschets globaal](images/mdbreakdownglobal.png)
-![Breakdownschets detail](images/mdbreakdowndetail.png)
-
+![Breakdownschets globaal desktop](images/mdbreakdownglobal.png)
+![Breakdownschets detail desktop](images/mdbreakdowndetail.png)
+![Breakdownschets globaal mobile](images/mdbreakdownglobalmobile.png)
+![Breakdownschets detail mobile](images/mdbreakdowndetailmobile.png)
