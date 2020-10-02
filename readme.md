@@ -38,7 +38,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Het was lastig om weer alles weer terug te halen. Wel was het redelijk te doen om de HTML van de bestaande website zelf te schrijven.
+Aan de CSS ben ik niet toe gekomen. Dat gaat nog een challenge zijn.
+Ik neig nu naar mijn focus leggen op JS, ik krijg tijdens het bekijken van de website namelijk al allerlei ideeën over hoe ik dat zou gaan doen.
 
 **Screenshot(s):**
 
@@ -58,7 +60,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je startniveau:** Rood
 
-**Je focus:** Responsive
+**Je focus:** Surface
 
 **Je opdracht:** https://www.oneplus.com/nl
 
