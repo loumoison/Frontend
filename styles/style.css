@@ -1,4 +1,4 @@
-/* CSS Document */
+/* Algemene styling */
 *,
 *::after,
 *::before {
@@ -8,18 +8,26 @@
 body {
   font-family: sans-serif;
   max-width: 100%;
-  background-color: #f6f6f6;
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
 }
 
-h2 {
-  font-weight: normal;
-  font-size: 28px;
+h2, h3 {
+  font-weight: lighter;
+  font-size: 1.8em;
   color: black;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-weight: normal;
 }
 
 p {
@@ -29,31 +37,381 @@ p {
 
 a {
   text-decoration: none;
+  font-size: 1em;
 }
 
-main > section:first-of-type {
+hr {
+  width: 100%;
+}
+
+/* Verdere styling */
+
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 1em;
+  height: 50px;
+}
+
+.hamburger {
+  width: 18px;
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger div {
+  background-color: darkslategrey;
+  content: "";
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+}
+
+/* .Hamburger veranderen naar selectoren?
+Hamburger class active geven > daarin styling aanpassen, in class active transform e.d. geven.
+Daarna class standard met normale styling? */
+
+.hamburger:active::before {
+  transform: rotate(140deg);
+}
+
+.navbar>a:first-of-type {
+  width: 120px;
+}
+
+
+
+main{
+  padding-top: 50px;
+}
+
+main.home>section {
+  margin-bottom: 10px;
+}
+
+/* 
+De pijltjes (::after) heb ik deels mbv. de styling van de officiele website gemaakt.
+Echter heb ik het op een efficientere manier gedaan. Onderstaand de code van OnePlus
+    display: inline-block;
+    content: " ";
+    height: 8px;
+    width: 8px;
+    border-color: #09c;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    top: 43%;
+    right: 5px;
+(bron: oneplus.com/nl)
+*/
+
+
+main.home>section:first-of-type {
   background-image: url("../images/backtoschool.jpg");
   background-size: cover;
   background-position: 50%;
-  padding: 10%;
+  padding: .7em 2.5em;
   padding-bottom: 200px;
+  height: 330px;
 }
 
-section.betaalmethodes {
+main.home>section:first-of-type>a::after {
+  content: "";
+  display: inline-block;
+  height: .5em;
+  width: .5em;
+  border: 2px solid black;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg) translate(3px, -3px);
+  z-index: -1;
+}
+
+.home>section:nth-of-type(2) {
+  background-color: #02b4d8;
+  background-image: url("../images/oneplusnord.jpg");
+  background-size: auto 350px;
+  background-position: calc(50% - 120px) calc(100% + 20px);
+  background-repeat: no-repeat;
+  height: 550px;
+  padding: 10%;
+  padding: .7em 2.5em;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home>section:nth-of-type(2)>h2,
+.home>section:nth-of-type(2)>p,
+.home>section:nth-of-type(2)>a {
+  text-align: center;
+  color: white;
+  white-space: pre-wrap;
+}
+
+.home>section:nth-of-type(2)>a:first-of-type {
+  width: 7em;
+  padding: .7em;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.home>section:nth-of-type(2)>a:last-of-type::after {
+  content: "";
+  display: inline-block;
+  height: .5em;
+  width: .5em;
+  border: 2px solid white;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg) translate(3px, -3px);
+}
+
+.home>section:nth-of-type(3) {
+  font-size: 0.8em;
+  background-image: url("../images/oneplusbuds.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 450px;
+  padding: 10%;
+  padding: 2em 2.5em;
+  padding-bottom: 200px;
+  line-height: 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home>section:nth-of-type(3)>a {
+  margin-top: .8em;
+  font-size: 1.4em;
+}
+
+.home>section:nth-of-type(3)>a:last-of-type::after {
+  content: "";
+  display: inline-block;
+  height: .5em;
+  width: .5em;
+  border: 2px solid black;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg) translate(3px, -3px);
+}
+
+main.home>section:nth-of-type(4) {
+  text-align: center;
+  background-color: #f6f6f6;
+  background-image: url("../images/newsletter.jpg");
+  background-size: 600px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding: .7em 2.5em;
+  padding-bottom: 200px;
+  height: 450px;
+}
+
+.home>section:nth-of-type(4)>p {
+  margin-top: 0.8em;
+}
+
+.home>section:nth-of-type(4)>p:last-of-type {
+  font-size: 13px;
+}
+
+.home>section:nth-of-type(4)>form {
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home>section:nth-of-type(4)>form>input {
+  width: 300px;
+  background: transparent;
+  margin: 2em;
+  padding: 1em;
+  border: 0;
+  border-bottom: 1px solid grey;
+}
+
+.home>section:nth-of-type(4)>form>input::placeholder {
+  color: rgb(175, 175, 175);
+  font-size: 1.4em;
+}
+
+.home>section:nth-of-type(4)>form>button {
+  font-size: 1.2em;
+  padding: 0.4em 0.9em;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.home>section:nth-of-type(4)>form>button:active {
+  border-width: 3px;
+}
+
+.home>section:nth-of-type(4)>p>b {
+  width: 50px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+
+section.betaalmethodes,
+section.betaalmethodes>div {
   padding: 1em 2em;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-section.betaalmethodes>img {
+section.betaalmethodes>img,
+section.betaalmethodes>div>img {
   height: 24px;
   padding: 0em 0.5em
 }
 
-.dropdown {
-  display: none;
+
+/* Styling specifiek voor pg. 2 vanaf hier */
+
+.detailpg>section {
+  margin: 20px;
 }
+
+.detailpg>section:first-of-type {
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+.detailpg>section:first-of-type>div {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  display: inline-block;
+  background-color: rgb(187, 186, 186);
+  width: 30px;
+  height: 2px;
+  margin-right: 12px;
+  margin-bottom: 40px;
+}
+
+span.galleryactive {
+  background-color: black;
+}
+.detailpg>section:nth-of-type(2)>ul {
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 2em;
+}
+
+.detailpg>section:nth-of-type(2)>ul>li {
+  color: darkslategrey;
+  font-size: 15px;
+}
+
+.detailpg>section:nth-of-type(3)>ul {
+  padding-left: 0px;
+}
+
+.detailpg>section:nth-of-type(3)>ul>li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 1em;
+  box-shadow: 0px 0px 5px 1px darkgrey;
+}
+
+li.selected {
+  border: 2px solid red;
+}
+
+.detailpg>section:nth-of-type(3)>ul:nth-of-type(2)>li {
+  white-space: pre-wrap;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.detailpg>section:nth-of-type(3)>ul:first-of-type>li::after {
+  display: inline-block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #404d53;
+  border-radius: 100%;
+  border: 1px solid black
+}
+
+.detailpg>section:nth-of-type(3)>ul:first-of-type>li:nth-of-type(2)::after {
+  background-color: #1fd4e7;
+}
+
+.detailpg>section:nth-of-type(4)>h2 {
+  margin-bottom: 0;
+}
+
+.detailpg>section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailpg>section:nth-of-type(4)>figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+figcaption {
+  margin: -1em auto 1em;
+}
+
+
+
+.detailpg>section.betaalmethodes {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.detailpg>section.betaalmethodes>div {
+  width: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq h3 {
+  font-size: 20px;
+  border-top: 1px solid lightgray;
+  padding-top: 1em;
+}
+
+/* Footer styling vanaf hier */
 
 footer>section {
   padding: 20px;
@@ -92,9 +450,23 @@ footer>section>ul>li>a {
   border-right: 1px solid lightgray;
 }
 
-footer>section:last-of-type>img {
-  width: 24px;
+footer>section:nth-of-type(4) {
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
 }
-footer>section:last-of-type>p {
+
+footer>section:nth-of-type(5) {
+  background-color: #f9f9f9;
+}
+
+footer>section:nth-of-type(4)>img {
+  width: 30px;
+  margin-right: 1em;
+}
+
+footer>section:last-of-type>p,
+footer>section:nth-of-type(4)>p {
   display: inline;
 }
