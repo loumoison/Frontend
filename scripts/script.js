@@ -99,7 +99,7 @@ function slide4() {
 // Switch active kleur select button
 var buttonGrijs = document.querySelector(".detailpg>section:nth-of-type(3)>ul>li:nth-of-type(1)");
 var buttonBlauw = document.querySelector(".detailpg>section:nth-of-type(3)>ul>li:nth-of-type(2)");
-var kleurActief
+var kleurActief = "Grijs"
 
 buttonBlauw.addEventListener('click', switchKleur);
 buttonGrijs.addEventListener('click', switchKleur);
