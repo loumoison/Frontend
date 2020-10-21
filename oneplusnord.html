@@ -6,7 +6,7 @@
 	<meta name="author" content="Lou Moison">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Never Settle - OnePlus</title>
+	<title>Buy OnePlus Nord | Pretty much everything you could ask for. - OnePlus (Nederland)</title>
 
 	<link href="styles/style.css" rel="stylesheet">
 </head>
@@ -14,47 +14,40 @@
 
 <body>
 	<header>
-		<!-- Logo, nav, winkelmandje -->
-
+		<!-- Header balk/ nav bar -->
 		<div class="navbar">
-			<div class="hamburger">
-				<div></div>
+			<div class="handle">
+				<span id="topBar"></span>
+				<span id="middleBar"></span>
+				<span id="bottomBar"></span>
 			</div>
 			<a href="index.html"><img src="images/logooneplus.png" alt="oneplus logo"></a>
 			<a href="#"><img src="images/shoppingbag.svg" alt="winkelmandje"></a>
 		</div>
 
-
-		<!-- <ul>
-			<li><a href="#">Telefoon</a></li>
-			<li><a href="#">Store</a></li>
-			<li><a href="#">Over ons</a></li>
-			<li><a href="#">Ondersteuning</a></li>
-			<li><a href="#">Community</a></li>
-			<li><a href="#">Vind een winkel</a></li>
-		</ul>
-
-		<div>
+		<!-- Uitklapbaar menu -->
+		<nav>
 			<ul>
-				<li><a href="oneplusnord.html">OnePlus Nord</a></li>
-				<li><a href="#">OnePlus 8 Pro</a></li>
-				<li><a href="#">OnePlus 8</a></li>
-				<li><a href="#">OnePlus 7T Pro</a></li>
-				<li><a href="#">OnePlus 7T</a></li>
-				<li><a href="#">OnePlus 7 Pro</a></li>
+				<li id="telefoonnav">Telefoon
+					<!-- Uitklapbaar menu/ overzicht telefoons -->
+					<ul class="telefoonnavinhoud">
+						<li><a href="oneplusnord.html">OnePlus Nord</a></li>
+						<li><a href="#">OnePlus 8 Pro</a></li>
+						<li><a href="#">OnePlus 8</a></li>
+						<li><a href="#">OnePlus 7T Pro</a></li>
+						<li><a href="#">OnePlus 7T</a></li>
+						<li><a href="#">OnePlus 7 Pro</a></li>
+					</ul>
+				</li>
+				<span class="verticalBar"></span>
+				<span class="horizontalBar"></span>
+				<li><a href="#">Store</a></li>
+				<li><a href="#">Over ons</a></li>
+				<li><a href="#">Ondersteuning</a></li>
+				<li><a href="#">Community</a></li>
+				<li><a href="#">Vind een winkel</a></li>
 			</ul>
-		</div>
-
-		<div>
-			<ul>
-				<li><a href="">Telefoon</a></li>
-				<li><a href="">Hoesjes en bescherming</a></li>
-				<li><a href="">Voeding en kabels</a></li>
-				<li><a href="">Audio</a></li>
-				<li><a href="">Bundels</a></li>
-				<li><a href="">Uitrusting</a></li>
-			</ul>
-		</div> -->
+		</nav>
 
 	</header>
 
@@ -62,11 +55,11 @@
 	<main class="detailpg">
 		<section>
 			<img src="images/nordproduct1.png" alt="oneplus nord">
-			<div>
-				<span class="galleryactive"></span>
-				<span></span>
-				<span></span>
-				<span></span>
+			<div class="galleryspan">
+				<span onclick="slide1()" class="galleryactive"></span>
+				<span onclick="slide2()"></span>
+				<span onclick="slide3()"></span>
+				<span onclick="slide4()"></span>
 			</div>
 		</section>
 
@@ -91,10 +84,10 @@
 			<h4>Capaciteit</h4>
 			<ul>
 				<li class="selected">12 GB RAM + 256 GB Storage
-&euro; 499,00
+					&euro; 499,00
 				</li>
 				<li>8 GB RAM + 128 GB Storage
-&euro; 399,00
+					&euro; 399,00
 				</li>
 			</ul>
 			<hr>
@@ -106,7 +99,7 @@
 				<img src="images/nordproduct1.png" alt="oneplus nord grijs">
 				<figcaption>OnePlus Nord</figcaption>
 			</figure>
-			<div>
+			<div class="galleryspan">
 				<span class="galleryactive"></span>
 				<span></span>
 				<span></span>
@@ -123,41 +116,53 @@
 		</section>
 
 		<section class="betaalmethodes">
-				<h4>betaling:</h4>
-				<div>
-					<img src="images/paypal.png" alt="paypal logo">
-					<img src="images/visa.png" alt="visa logo">
-					<img src="images/mastercard.png" alt="mastercard logo">
-					<img src="images/americanexpress.jpg" alt="american express logo">
-					<img src="images/ideal.png" alt="ideal logo">
-				</div>
+			<h4>betaling:</h4>
+			<div>
+				<img src="images/paypal.png" alt="paypal logo">
+				<img src="images/visa.png" alt="visa logo">
+				<img src="images/mastercard.png" alt="mastercard logo">
+				<img src="images/americanexpress.jpg" alt="american express logo">
+				<img src="images/ideal.png" alt="ideal logo">
+			</div>
 		</section>
 		<section class="betaalmethodes">
-				<h4>Prioritair:</h4>
-				<div>
-					<img src="images/shippingdhl.png" alt="dhl logo">
-					<img src="images/shippingups.png" alt="ups logo">
-				</div>
-				
+			<h4>Prioritair:</h4>
+			<div>
+				<img src="images/shippingdhl.png" alt="dhl logo">
+				<img src="images/shippingups.png" alt="ups logo">
+			</div>
+
 		</section>
 
 		<section class="faq">
 			<h2>Veelgestelde vragen</h2>
-			<h3>Welke betalingsmethoden accepteren jullie?</h3>
-			<p>Je kunt betalen met PayPal*, iDeal of je creditcard. *PayPal Credit is alleen beschikbaar in de VS.</p>
-			<p>Voor vragen over PayPal neem je rechtstreeks contact op met 1-888-221-1161 (VS) of 1-402-935-2050 (bellen
-				vanuit andere landen dan de VS).</p>
+			<details>
+				<summary>Welke betalingsmethoden accepteren jullie?</summary>
+				<p>Je kunt betalen met PayPal*, iDeal of je creditcard. *PayPal Credit is alleen beschikbaar in de VS.</p>
+				<p>Voor vragen over PayPal neem je rechtstreeks contact op met 1-888-221-1161 (VS) of 1-402-935-2050 (bellen
+					vanuit andere landen dan de VS).</p>
+			</details>
 
-			<h3>Wanneer heb ik mijn bestelling in huis?</h3>
-			<p>Normaal gesproken krijg je bij het betalen een indicatie van het verwachte moment van verzenden en
-				leveren. De levertijd is afhankelijk van de verzendmethode in jouw regio.</p>
-			<p>De levertijd is (na verzending van je bestelling):</p>
-			<p>3 tot 7 werkdagen</p>
-			<p>Prioritair: 1 tot 3 werkdagen</p>
 
-			<h3>Wat is de procedure voor terugzending en vervanging?</h3>
-			<p>Als je om een of andere reden niet tevreden bent met je OnePlus-product(en), kun je binnen 15 kalenderdagen na levering een aanvraag indienen voor retourzending.</p>
-		    <p>Om dit te doen, dan kun je een retour/vervanging verzoek aanvragen door in te loggein in je OnePlus account en te kijken bij My Order.</p>
+				<details>
+					<summary>Wanneer heb ik mijn bestelling in huis?</summary>
+					<p>Normaal gesproken krijg je bij het betalen een indicatie van het verwachte moment van verzenden en
+						leveren. De levertijd is afhankelijk van de verzendmethode in jouw regio.</p>
+					<p>De levertijd is (na verzending van je bestelling):</p>
+					<p>3 tot 7 werkdagen</p>
+					<p>Prioritair: 1 tot 3 werkdagen</p>
+				</details>
+
+
+			<details>
+				<summary>Wat is de procedure voor terugzending en vervanging?</summary>
+				<p>Als je om een of andere reden niet tevreden bent met je OnePlus-product(en), kun je binnen 15
+					kalenderdagen na levering een aanvraag indienen voor retourzending.</p>
+				<p>Om dit te doen, dan kun je een retour/vervanging verzoek aanvragen door in te loggein in je OnePlus
+					account en te kijken bij My Order.</p>
+			</details>
+
+
 		</section>
 
 

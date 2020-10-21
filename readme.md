@@ -8,17 +8,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. https://w3bits.com/animated-menu-icon-css/
 2. https://www.oneplus.com/nl
-3. -...-
+3. https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+### Stand van zaken
+
+Ik heb afgelopen dagen de laatste beetjes styling en alle JS geschreven. Ik heb zo veel mogelijk verschillende dingen werkend gekregen. Enkele dingen heb ik niet precies zoals op de OnePlus website gemaakt. Dit zijn dingen die ik wel had willen doen en ook had kunnen doen, alleen gezien de tijd niet voor elkaar heb gekregen. Ik heb namelijk op dezelfde dag als het FED gesprek, ook een deadline voor project WEB. Ik heb de meeste tijd in FED gestoken omdat ik het wel erg leuk vind om te doen.
+Mijn JS had ik op sommige punten efficiënter willen maken (zoals bij het afbeelding switchen) omdat de functions die ik daar nu gebruik allemaal praktisch dezelfde functie hebben maar met net een andere uitkomst. Ik zou de afbeeldingen bijvoorbeeld in een Array kunnen doen en betere if/ else statements kunnen schrijven om van deze 4 functies 1 functies met meer variabelen te maken.
+Ik ben wel tevreden over het eindresultaat.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![Voortgangschets pagina 1](images/mdvoortgang4a.png)
+![Voortgangschets pagina 2](images/mdvoortgang4b.png)
 
 
 
